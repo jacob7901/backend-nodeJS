@@ -1,0 +1,61 @@
+{
+    "management_ui_list" : {
+        "page_edit": "Edit",    
+        "page_delete": "Delete",
+        "apply_button": "APPLY",
+        "modify_button": "MODIFY",
+        "delete_button": "DELETE",
+        "cancel_button": "CANCEL",
+        "apply_success": "Saved successfully",
+        "modify_success": "Modified successfully",
+        "delete_success": "Deleted successfully",
+        "class_delete_warning_title": "Are you sure to delete this class?",
+        "account_delete_warning_title": "Are you sure to delete this account?",
+        "delete_subtitle": "This action cannot be undone"
+    },
+
+    "management_common_list" : {
+        "class_name" : "Class Name",
+        "password": "Password",
+        "password_confirm": "Confirm Password",
+        "password_reset": "Reset",
+        "class_progress": "Progress"
+    },
+
+    "class_management_list": {
+        "class_name": "Class Name",
+        "class_created_date": "Created Date",
+        "class_status": "Status", 
+        "class_tutor_name": "Tutor Name",
+        "class_student_name": "Student Name",
+        "class_times": "The number of sessions",
+        "class_hours": "Total session hours",
+        "class_add_new": "Add New Class",
+        "class_price": "Payment",
+        "class_desc": "Class description"
+    },
+
+    "tutor_management_list": {
+        "tutor_id": "User ID",
+        "tutor_name": "Name",
+        "tutor_email": "Email",
+        "tutor_contact": "Phone",
+        "tutor_class_page": "Class in charge",
+        "tutor_class_popup": "CLASS IN CHARGE",
+        "tutor_total_price": "Revenue"
+      },
+      
+      "student_management_list": {
+        "student_id": "User ID",
+        "student_name": "Name",
+        "student_email": "Email",
+        "student_contact": "Phone",
+        "parent_name": "Parent Name",
+        "parent_contact": "Parent Phone",
+        "student_register_class": "Registered Class",
+        "student_registered_class_pop": "REGISTERED CLASS",
+        "student_total_price": "Total Payment",
+        "student_birthday": "Birthday",
+        "student_grade": "Grade"
+      }
+}

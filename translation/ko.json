@@ -1,0 +1,48 @@
+{
+    "management_ui_list" : {
+        "page_edit": "변경",    
+        "page_delete": "삭제",
+        "apply_button": "신청",
+        "modify_button": "변경",
+        "delete_button": "삭제",
+        "cancel_button": "취소",
+        "apply_success": "저장이 완료되었습니다.",
+        "modify_success": "변경이 완료되었습니다.",
+        "delete_success": "삭제가 완료되었습니다.",
+        "class_delete_warning_title": "이 수업을 정말 삭제하시겠습니까?",
+        "account_delete_warning_title": "이 이용자를 정말 삭제하시겠습니까?",
+        "delete_subtitle": "삭제 후 복구가 불가능합니다."
+    },
+
+    "management_common_list" : {
+        "class_name" : "수업명",
+        "password": "암호",
+        "password_confirm": "암호 재입력",
+        "password_reset": "초기화",
+        "class_progress": "진행률"
+    },
+
+    "class_management_list": {
+        "class_name": "수업명",
+        "class_created_date": "생성일",
+        "class_status": "상태", 
+        "class_tutor_name": "강사 이름",
+        "class_student_name": "학생 이름",
+        "class_times": "수업 횟수",
+        "class_hours": "총 수업 시간",
+        "class_add_new": "수업 추가",
+        "class_price": "납부 금액",
+        "class_desc": "수업 메모"
+    },
+
+    "tutor_management_list": {
+        "tutor_id": "아이디",
+        "tutor_name": "이름",
+        "tutor_email": "이메일",
+        "tutor_contact": "연락처",
+        "tutor_class_page": "맡은 수업",
+        "tutor_class_popup": "맡은 수업",
+        "tutor_total_price": "수업의 총 비용"
+      }
+
+}
