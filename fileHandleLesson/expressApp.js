@@ -29,4 +29,6 @@ app.use(mw)
 app.use(errorMw)
 
 
-app.listen(4001, () => console.log('Server started'))
+// app.listen(4001, () => console.log('Server started'))
+
+module.exports = app

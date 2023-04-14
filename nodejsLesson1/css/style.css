@@ -1,5 +1,30 @@
 
 .jumbotron {
-    margin: 50px;
-    max-width: 500px;
+    margin: 10px;
+    max-width: 700px;
+    padding: 0px;
+}
+
+.todoList {
+    background-color: beige;
+
+    /* display: flex; */
+}
+
+.todoCaption {
+    background-color: skyblue;
+    display: flex;
+}
+
+.todoDate {
+    margin-left: 30px;
+}
+
+.todoDelete {
+    margin-left: 30px;
+}
+
+.my-4 {
+    font-size: 30px;
+
 }

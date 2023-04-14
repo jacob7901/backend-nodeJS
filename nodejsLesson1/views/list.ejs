@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>list, world!</title>
   </head>
@@ -40,20 +40,64 @@
         </div>
       </nav>
       <div class="jumbotron">
-        <h1 class="display-4">홈입니다.</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="my-4">리스트 홈페이지입니다.</h1>
+        <p class="lead">서버에서 가져온 할일 리스트 </p>
+          
+        <div class="todoList jumbotron">
+        <ul class="list-group">
+          <% posts.forEach(function(post) { %>
+          <li class="list-group-item">
+          <div class="todoCaption">
+              <div class="todoTitle">
+                <p>글번호: <%= post._id %> </p>
+                <h4> 할 일 : <%= post.title %></h4>
+              </div>
+            <div class="todoDate">
+              <p>마감날짜 : <%= post.date %></p>
+            </div>
+            <div class="todoDelete">
+              <button class="postDelete" data-id="<%= post._id %>">삭제</button>
+            </div>
+            <!-- todoCaption finished -->
+            </div>
+          </li>
+        </div> <% }) %>
+        </ul>
+      </div>  
+
+
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-
-        서버에서 가져온 할일 리스트
-        <h4> 할일 제목 : <%= %></h4>
-        <p>할일 마감날짜 : <%= %></p>
-      </div>
+      </div> 
 
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+   
+    <script>
+
+    $('.postDelete').click( (e) => {
+      var postNumber = e.target.dataset.id;
+      var target = $(this);
+      $.ajax( {
+        method : 'DELETE',
+        url : '/delete',
+        data : { _id : postNumber }
+        // method : 'DELETE',
+        // url : '요청할경로',
+        // data : '요청과 함께 보낼 데이터'
+        // data : { _id : 1 }
+      }).done( () => {
+        console.log('성공');
+        // target.parent()
+      }).fail( () => {
+        console.log('실패');
+      });
+    });
+      // jQuery 문법으로 구현한 코드
+      
+    </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
     <!--
